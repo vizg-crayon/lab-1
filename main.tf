@@ -15,6 +15,6 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-  name     = "rahman-rg"
+  name     = "rahman2-rg"
   location = "southeastasia"
 }
