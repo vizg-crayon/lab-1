@@ -25,3 +25,8 @@ resource "azurerm_resource_group" "rg" {
   name     = "rahman-rg"
   location = "southeastasia"
 }
+
+resource "azurerm_resource_group" "rg2" {
+  name     = "rahman3-rg"
+  location = "southeastasia"
+}
