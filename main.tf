@@ -25,3 +25,16 @@ resource "azurerm_resource_group" "rg" {
   name     = "rahman-rg"
   location = "southeastasia"
 }
+
+# Create a virtual network
+resource "azurerm_virtual_network" "vnet" {
+  name                = "myTFVnet"
+  address_space       = ["10.0.0.0/16"]
+  location            = "southeastasia"
+  resource_group_name = azurerm_resource_group.rg.name
+
+  tags = {
+    environment = "staging"
+    Team        = "DevOps"
+  }
+}
